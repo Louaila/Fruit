@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+section{
+    width: 450px;
+    height: 450px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+section div {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+section div img{
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+transition: 0.5s;
+}
+
+section nav ul li {
+    text-align: center;
+}
+
+.droite:hover img {
+    transform: translateX(90%);
+}
+.gauche:hover img {
+    transform: translateX(-90%);
+}
+
